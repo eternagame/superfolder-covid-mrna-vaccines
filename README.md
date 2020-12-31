@@ -42,8 +42,8 @@ The sequence was designed through the following steps, which have been validated
 |          IDT | 0.51 | -1089.5 | 1427.8 |
 |      GeneWiz | 0.49 | -1304.3 | 1263.9 |
 |      GC-rich | 0.42 | -1617.2 | 1176.6 |
-| LinearDesign | *0.20* | *-2533.3* |  963.4 |
-|  Superfolder | 0.21 | -2385.8 |  *943.6* |
+| LinearDesign | **0.20** | **-2533.3** |  963.4 |
+|  Superfolder | 0.21 | -2385.8 |  **943.6** |
 
 Figure of, e.g., dG vs. degscore 2.1, and dG vs. AUP?*
 
