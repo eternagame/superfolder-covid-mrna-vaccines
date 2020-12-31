@@ -30,7 +30,7 @@ This exact amino acid sequence is the basis for most mRNA vaccines that are unde
 The sequence was designed through the following steps, which have been validated through extensive experiments on model mRNA's by the Das and Barna labs at Stanford University (OpenVaccine consortium, 2021, in prep).
 
 1. A starting sequence predicted to have highly negative (stable) deltaG was produced with the [LinearDesign algorithm](https://arxiv.org/abs/2004.10177) available at [this server](http://rna.baidu.com) (Zhang et al., 2020).
-2. The sequence was further optimized with the [Ribotree-mRNA Monte Carlo Tree Search algorithm](https://www.biorxiv.org/content/10.1101/2020.08.22.262931v1) which is being made available at the [Eterna software site](http://eternagame.org/about/software).
+2. The sequence was further optimized with the [Ribotree-mRNA Monte Carlo Tree Search algorithm](https://www.biorxiv.org/content/10.1101/2020.08.22.262931v1) which is available at the [Eterna software site](http://eternagame.org/about/software).
 3. The Ribotree-mRNA runs optimized DegScore, a predictor of overall hydrolysis rate trained on a vast data set of empirical measurements acquired during the [Eterna](https://eternagame.org) [roll-your-own sequence challenges](https://eternagame.org/labs/9830365) (OpenVaccine consortium, 2021, in prep). Training and test data are available at [Kaggle](https://www.kaggle.com/c/stanford-covid-vaccine/).
 4. Ribotree-mRNA runs were guided by [EternaFold](https://www.biorxiv.org/content/10.1101/2020.05.29.124511v1), currently the most accurate folding engine for predicting RNA structure properties (Wayment-Steele et al., 2020a).
 5. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Wayment-Steele  et al., 2020b).
@@ -40,9 +40,9 @@ The sequence was designed through the following steps, which have been validated
 
 | Design |  dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> |
 | ------------ |------------ |--------- | ----  |
-|          IDT | -1089.5     | 0.51     |  1427.8 |
-|      GeneWiz | -1304.3     | 0.49     |  1263.9 |
-|      GC-rich | -1617.2     | 0.42     |  1176.6 |
+|          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) | -1089.5     | 0.51     |  1427.8 |
+|     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) | -1304.3     | 0.49     |  1263.9 |
+|      GC-rich<sup>c</sup> | -1617.2     | 0.42     |  1176.6 |
 | LinearDesign | **-2533.3** | **0.20** |   963.4 |
 |  Superfolder | -2385.8     | 0.21     |   **943.6** |
 
@@ -50,7 +50,9 @@ The sequence was designed through the following steps, which have been validated
 
 **Is there a source to cite for the GC-rich method?**
 
-<sup>a</sup>Wayment-Steele et al, 2020b. <sup>b</sup>OpenVaccine consortium, 2021, in prep.
+<sup>a</sup>Wayment-Steele et al, 2020b. <sup>b</sup>OpenVaccine consortium, 2021, in prep. 
+
+<sup>c</sup> Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).
 
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="500"/>
 
@@ -75,5 +77,7 @@ Zhang, H., Zhang, L., Li, Z., Liu, K., Liu, B., Mathews, D. H., & Huang, L. (202
 Wayment-Steele, H.K., Kim, D.S., Choe, C.A., Nicol, J.J., Wellington-Oguri, R., Sperberg, R.A.P., Huang, P., Eterna Participants, Das, R. (2020). Theoretical basis for stabilizing messenger RNA through secondary structure design. bioRxiv, 262931.
 
 Wayment-Steele, H.K., Kladwang, W., Eterna Participants, Das, R. (2020). RNA secondary structure packages ranked and improved by high-throughput experiments. bioRxiv, 124511.
+
+Thess, A., Grund, S., Mui, B. L., Hope, M. J., Baumhof, P., Fotin-Mleczek, M., & Schlake, T. (2015). Sequence-engineered mRNA without chemical nucleoside modifications enables an effective protein therapy in large animals. Molecular Therapy, 23(9), 1456-1464.
 
 For answers to any additional questions that might help accelerate the end of the COVID-19 pandemic, please contact [Rhiju Das](https://daslab.stanford.edu), Stanford University, <a href="mailto:rhiju@stanford.edu">rhiju@stanford.edu</a>.
