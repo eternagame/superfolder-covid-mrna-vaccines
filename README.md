@@ -46,8 +46,7 @@ The sequence was designed through the following steps, which have been validated
 | LinearDesign | **-2533.3** | **0.20** |   963.4 |
 |  Superfolder | -2385.8     | 0.21     |   **943.6** |
 
-<sup>a</sup> (Wayment-Steele et al., 2020b)
-<sup>b</sup> (OpenVaccine consortium, 2021, in prep)
+<sup>a</sup>Wayment-Steele et al, 2020b. <sup>b</sup>OpenVaccine consortium, 2021, in prep.
 
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="500"/>
 
