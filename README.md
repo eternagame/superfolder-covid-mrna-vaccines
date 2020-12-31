@@ -46,17 +46,8 @@ The sequence was designed through the following steps, which have been validated
 | LinearDesign<sup>d</sup> | **-2533.3** | **0.20** |   963.4 |
 |  Superfolder | -2385.8     | 0.21     |   **943.6** |
 
-**put in links for ID and GENEWIZ tools**
+<sup>a</sup>Wayment-Steele, 2020b. <sup>b</sup>OpenVaccine consortium, 2021, in prep. <sup>c</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). <sup>d</sup>Zhang, 2020.
 
-**Is there a source to cite for the GC-rich method?**
-
-<sup>a</sup>Wayment-Steele, 2020b.
-
-<sup>b</sup>OpenVaccine consortium, 2021, in prep.
-
-<sup>c</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).
-
-<sup>d</sup>Zhang, 2020.
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="500"/>
 
 ## Additional files.
