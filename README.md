@@ -15,7 +15,7 @@ The RNA above also includes a stop codon.
 
 Here is a visualization of the secondary structure of the mRNA:
 
-<img src="assets/secstructs.png" alt="drawing" width="200"/>
+<img src="assets/secstructs.png" alt="drawing" width="1000"/>
 
 ## What it codes for
 ```
