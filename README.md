@@ -14,7 +14,7 @@ The RNA above also includes a stop codon.
 *Feel free to copy/paste this sequence and use directly in your research or product development.* 
 
 Here is a visualization of the secondary structure of the mRNA:
-**Hannah please plop in an image from ribographviz.**
+![](assets/secstructs.png)
 
 ## What it codes for
 ```
