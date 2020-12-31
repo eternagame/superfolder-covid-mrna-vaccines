@@ -28,22 +28,25 @@ This exact amino acid sequence is the basis for most mRNA vaccines that are unde
 
 The sequence was designed through the following steps, which have been validated through extensive experiments on model mRNA's by the Das and Barna labs at Stanford University (OpenVaccine consortium, 2021, in prep).
 
-1. A starting sequence predicted to have highly negative (stable) deltaG was produced with the [LinearDesign algorithm](https://arxiv.org/abs/2004.10177) available at [this server](http://rna.baidu.com) (Zhang, 2020).
+1. A starting sequence predicted to have highly negative (stable) deltaG was produced with the [LinearDesign algorithm](https://arxiv.org/abs/2004.10177) available at [this server](http://rna.baidu.com) (Zhang et al., 2020).
 2. The sequence was further optimized with the [Ribotree-mRNA Monte Carlo Tree Search algorithm](https://www.biorxiv.org/content/10.1101/2020.08.22.262931v1) which is being made available at the [Eterna software site](http://eternagame.org/about/software).
 3. The Ribotree-mRNA runs optimized DegScore, a predictor of overall hydrolysis rate trained on a vast data set of empirical measurements acquired during the [Eterna](https://eternagame.org) [roll-your-own sequence challenges](https://eternagame.org/labs/9830365) (OpenVaccine consortium, 2021, in prep). Training and test data are available at [Kaggle](https://www.kaggle.com/c/stanford-covid-vaccine/).
-4. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Wayment-Steele, 2020b).
-5. Ribotree-mRNA runs were guided by [EternaFold](https://www.biorxiv.org/content/10.1101/2020.05.29.124511v1), currently the most accurate folding engine for predicting RNA structure properties (Wayment-Steele, 2020a).
+4. Ribotree-mRNA runs were guided by [EternaFold](https://www.biorxiv.org/content/10.1101/2020.05.29.124511v1), currently the most accurate folding engine for predicting RNA structure properties (Wayment-Steele et al., 2020a).
+5. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Wayment-Steele  et al., 2020b).
 6. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines.
 
 ## Comparison to conventionally designed mRNA sequences
 
- | Design  |   AUP<sup>1</sup> | dG(MFE) (kcal/mol) | DegScore<sup>3</sup> |
-| ------ |----------- |------ |----  |
-|          IDT | 0.51 | -1089.5 | 1427.8 |
-|      GeneWiz | 0.49 | -1304.3 | 1263.9 |
-|      GC-rich | 0.42 | -1617.2 | 1176.6 |
-| LinearDesign | **0.20** | **-2533.3** |  963.4 |
-|  Superfolder | 0.21 | -2385.8 |  **943.6** |
+| Design |  dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> |
+| ------------ |------------ |--------- | ----  |
+|          IDT | -1089.5     | 0.51     |  1427.8 |
+|      GeneWiz | -1304.3     | 0.49     |  1263.9 |
+|      GC-rich | -1617.2     | 0.42     |  1176.6 |
+| LinearDesign | **-2533.3** | **0.20** |   963.4 |
+|  Superfolder | -2385.8     | 0.21     |   **943.6** |
+
+<sup>a</sup> (Wayment-Steele et al., 2020b)
+<sup>b</sup> (OpenVaccine consortium, 2021, in prep)
 
 Figure of, e.g., dG vs. degscore 2.1, and dG vs. AUP?*
 
