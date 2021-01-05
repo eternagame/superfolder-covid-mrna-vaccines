@@ -10,6 +10,8 @@
 
 <sup>a</sup>Average unpaired probabiility (Wayment-Steele, 2020b). <sup>b</sup>Machine-learning model for predicting degradation (OpenVaccine consortium, 2021, in prep). <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Wayment-Steele, 2020b). <sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). <sup>e</sup>Zhang, 2020.
 
+The Superfolder construct has been optimized in RiboTree both to minimize DegScore, thus maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired. 
+
 <img src="assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="600"/>
 
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
