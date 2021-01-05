@@ -1,9 +1,11 @@
 # SuperFolder COVID-19 mRNA vaccine
 An mRNA for the SARS-CoV-2 Spike glycoprotein antigen (the prefusion stabilized variant, S-2P), stabilized against hydrolysis, for testing in COVID-19 mRNA vaccines. 
 
-The codons of this *Superfolder S-2P mRNA* have been redesigned to produce a highly stable mRNA structure predicted to have ~3x longer lifetime. The sequence based on computational design rules, algorithms, and a large corpus of experimental data developed in the **OpenVaccine** project, based at Stanford University.
+The codons of this *Superfolder S-2P mRNA* have been redesigned to produce a highly stable mRNA structure predicted to have ~3x longer lifetime in (non-frozen) aqueous storage. The sequence based on computational design rules, algorithms, and a large corpus of experimental data developed in the **OpenVaccine** project, based at Stanford University.
 
-This **open source mRNA vaccine** is being made available in the public domain. For avoidance of doubt, an [Open Covid License](LICENSE) is enclosed with this repository that grants license to any party for use of this sequence and enclosed data in research or product development that could accelerate the end of the COVID-19 pandemic. 
+This **open source mRNA vaccine** is being made available in the public domain to aid any efforts seeking to deliver COVID-19 mRNA vaccines in prefilled syringes without freezing. 
+
+For avoidance of doubt, an [Open Covid License](LICENSE) is enclosed with this repository that grants license to any party for use of this sequence and enclosed data in research or product development that could accelerate the end of the COVID-19 pandemic. 
 
 ## The RNA sequence
 ```
