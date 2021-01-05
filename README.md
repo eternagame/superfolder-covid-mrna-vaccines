@@ -41,7 +41,7 @@ The sequence was designed through the following steps, which have been validated
 ## Comparison to conventionally designed mRNA sequences
 
 | Design |  dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init</sub><sup>c</sup> |
-| ------------ |------------ |--------- | ----  |
+| ------------ |------------ |--------- | ----  | ----  | 
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | -1089.5     | 0.51     |  1427.8 | 0.46 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | -1304.3     | 0.49     |  1263.9 | 0.58 |
 |      GC-rich<sup>d</sup> | -1617.2     | 0.42     |  1176.6 | 0.63 |
