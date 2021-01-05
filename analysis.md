@@ -16,7 +16,7 @@ The Superfolder construct has been optimized in RiboTree both to minimize DegSco
 
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
 
-## Additional files.
+## Additional files
 
 `assets/analysis.py` reproduces the above calculations.
 
