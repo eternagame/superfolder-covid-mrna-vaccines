@@ -17,7 +17,7 @@ The RNA above also includes a stop codon.
 
 Here is a visualization of the secondary structure of the mRNA compared to the secondary structure of a mRNA designed through codon optimization:
 
-<img src="assets/secstructs.png" alt="Secondary structure of standard mRNA and superfolder" width="500"/>
+<img src="assets/secstructs.png" alt="Secondary structure of standard mRNA and superfolder" width="1000"/>
 
 ## What it codes for
 ```
