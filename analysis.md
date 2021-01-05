@@ -1,12 +1,15 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
-| Design |  dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init</sub><sup>c</sup> |
-| ------------ |------------ |--------- | ----  | ----  | 
-|          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | -1089.5     | 0.51     |  1427.8 | 0.46 |
-|     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | -1304.3     | 0.49     |  1263.9 | 0.58 |
-|      GC-rich<sup>d</sup> | -1617.2     | 0.42     |  1176.6 | 0.63 |
-| LinearDesign<sup>e</sup> | -2533.3 | 0.20 |   963.4 | 0.42 |
-|  Superfolder | -2382.1     | 0.22     |   **917.4** | **0.86** |
+| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init</sub><sup>c</sup> |
+| ------------ |--------|------- |--------- | ----  | ----  | 
+|  Superfolder | 0.73 | -2382.1     | 0.22     |   **917.4** | **0.86** |
+| LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
+|      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
+|     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
+
+|          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
+
+
 
 <sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b). <sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep). <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Wayment-Steele, 2020b) -- should be *high* to optimize translation. <sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). <sup>e</sup>Zhang, 2020.
 
