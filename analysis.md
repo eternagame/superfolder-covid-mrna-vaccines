@@ -6,7 +6,6 @@
 | LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
 |      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
-
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
 
 
