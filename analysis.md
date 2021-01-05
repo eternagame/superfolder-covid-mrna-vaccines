@@ -9,11 +9,11 @@
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
 
 
-
-<sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b). 
-<sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep). 
-<sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990; OpenVaccine consortium, 2021, in prep) -- should be *high* to optimize translation. 
-<sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). 
+  
+<sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b).  
+<sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep).  
+<sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990; OpenVaccine consortium, 2021, in prep) -- should be *high* to optimize translation.  
+<sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 <sup>e</sup>Zhang, 2020.
 
 The Superfolder construct has been optimized in RiboTree both to minimize DegScore, thus maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired. 
