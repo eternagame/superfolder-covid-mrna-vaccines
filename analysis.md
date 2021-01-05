@@ -10,7 +10,11 @@
 
 
 
-<sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b). <sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep). <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Wayment-Steele, 2020b) -- should be *high* to optimize translation. <sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). <sup>e</sup>Zhang, 2020.
+<sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b). 
+<sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep). 
+<sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990; OpenVaccine consortium, 2021, in prep) -- should be *high* to optimize translation. 
+<sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015). 
+<sup>e</sup>Zhang, 2020.
 
 The Superfolder construct has been optimized in RiboTree both to minimize DegScore, thus maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired. 
 
@@ -32,14 +36,16 @@ The Superfolder construct has been optimized in RiboTree both to minimize DegSco
 
 ## References
 
-OpenVaccine Consortium (2021). Comparative optimization of messenger RNA structure, stability and expression for RNA therapeutics (in preparation).
+Kozak M. Downstream secondary structure facilitates recognition of initiator codons by eukaryotic ribosomes (1990). Proc Natl Acad Sci U S A. 87(21):8301-5. [doi: 10.1073/pnas.87.21.8301](http://dx.doi.org/10.1073/pnas.87.21.8301)
 
-Zhang, H., Zhang, L., Li, Z., Liu, K., Liu, B., Mathews, D. H., & Huang, L. (2020). LinearDesign: Efficient Algorithms for Optimized mRNA Sequence Design. arXiv preprint arXiv:2004.10177.
+OpenVaccine Consortium (2021). Comparative optimization of messenger RNA structure, stability and expression for RNA therapeutics (in preparation).
 
 Wayment-Steele, H.K., Kim, D.S., Choe, C.A., Nicol, J.J., Wellington-Oguri, R., Sperberg, R.A.P., Huang, P., Eterna Participants, Das, R. (2020). Theoretical basis for stabilizing messenger RNA through secondary structure design. bioRxiv, 262931.
 
 Wayment-Steele, H.K., Kladwang, W., Eterna Participants, Das, R. (2020). RNA secondary structure packages ranked and improved by high-throughput experiments. bioRxiv, 124511.
 
 Thess, A., Grund, S., Mui, B. L., Hope, M. J., Baumhof, P., Fotin-Mleczek, M., & Schlake, T. (2015). Sequence-engineered mRNA without chemical nucleoside modifications enables an effective protein therapy in large animals. Molecular Therapy, 23(9), 1456-1464.
+
+Zhang, H., Zhang, L., Li, Z., Liu, K., Liu, B., Mathews, D. H., & Huang, L. (2020). LinearDesign: Efficient Algorithms for Optimized mRNA Sequence Design. arXiv preprint arXiv:2004.10177.
 
 For answers to any additional questions that might help accelerate the end of the COVID-19 pandemic, please contact [Rhiju Das](https://daslab.stanford.edu), Stanford University, <a href="mailto:rhiju@stanford.edu">rhiju@stanford.edu</a>.
