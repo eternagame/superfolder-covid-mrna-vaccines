@@ -35,19 +35,23 @@ The sequence was designed through the following steps, which have been validated
 2. The sequence was further optimized with the [Ribotree-mRNA Monte Carlo Tree Search algorithm](https://www.biorxiv.org/content/10.1101/2020.08.22.262931v1) which is available at the [Eterna software site](http://eternagame.org/about/software).
 3. The Ribotree-mRNA runs optimized DegScore, a predictor of overall hydrolysis rate trained on a vast data set of empirical measurements acquired during the [Eterna](https://eternagame.org) [roll-your-own sequence challenges](https://eternagame.org/labs/9830365) (OpenVaccine consortium, 2021, in prep). Training and test data are available at [Kaggle](https://www.kaggle.com/c/stanford-covid-vaccine/).
 4. Ribotree-mRNA runs were guided by [EternaFold](https://www.biorxiv.org/content/10.1101/2020.05.29.124511v1), currently the most accurate folding engine for predicting RNA structure properties (Wayment-Steele, 2020a).
-5. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Wayment-Steele, 2020b).
-6. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines.
+5. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Kozak, 1990; OpenVaccine consortium, in prep).
+6. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines (see, e.g., Orlandini von Niessen et al., 2008).
 
-Find more details and a comparison to other design methods [in analysis.md](analysis.md). 
+Find more details and a comparison to other design methods in [analysis.md](analysis.md). 
 
 ## References
 
+Kozak M. Downstream secondary structure facilitates recognition of initiator codons by eukaryotic ribosomes (1990). Proc Natl Acad Sci U S A. 87(21):8301-5. [doi: 10.1073/pnas.87.21.8301](http://dx.doi.org/10.1073/pnas.87.21.8301)
+
 OpenVaccine Consortium (2021). Comparative optimization of messenger RNA structure, stability and expression for RNA therapeutics (in preparation).
 
-Zhang, H., Zhang, L., Li, Z., Liu, K., Liu, B., Mathews, D. H., & Huang, L. (2020). LinearDesign: Efficient Algorithms for Optimized mRNA Sequence Design. arXiv preprint arXiv:2004.10177.
+Orlandini von Niessen AG, Poleganov MA, Rechner C, Plaschke A, Kranz LM, Fesser S, Diken M, Löwer M, Vallazza B, Beissert T, Bukur V, Kuhn AN, Türeci Ö, Sahin U. (2018), Improving mRNA-Based Therapeutic Gene Delivery by Expression-Augmenting 3' UTRs Identified by Cellular Library Screening. Mol Ther. 27(4):824-836. [doi: 10.1016/j.ymthe.2018.12.011](https://dx.doi.org/10.1016/j.ymthe.2018.12.011)
 
-Wayment-Steele, H.K., Kim, D.S., Choe, C.A., Nicol, J.J., Wellington-Oguri, R., Sperberg, R.A.P., Huang, P., Eterna Participants, Das, R. (2020). Theoretical basis for stabilizing messenger RNA through secondary structure design. bioRxiv, 262931.
+Wayment-Steele, H.K., Kim, D.S., Choe, C.A., Nicol, J.J., Wellington-Oguri, R., Sperberg, R.A.P., Huang, P., Eterna Participants, Das, R. (2020). Theoretical basis for stabilizing messenger RNA through secondary structure design. bioRxiv, 262931. [doi:10.1101/2020.08.22.262931](https://dx.doi.org/10.1101/2020.08.22.262931)
 
-Wayment-Steele, H.K., Kladwang, W., Eterna Participants, Das, R. (2020). RNA secondary structure packages ranked and improved by high-throughput experiments. bioRxiv, 124511.
+Wayment-Steele, H.K., Kladwang, W., Eterna Participants, Das, R. (2020). RNA secondary structure packages ranked and improved by high-throughput experiments. bioRxiv, 124511. [10.1101/2020.05.29.124511](https://dx.doi.org/10.1101/2020.05.29.124511)
+
+Zhang, H., Zhang, L., Li, Z., Liu, K., Liu, B., Mathews, D. H., & Huang, L. (2020). LinearDesign: Efficient Algorithms for Optimized mRNA Sequence Design. arXiv preprint [arXiv:2004.10177](https://arxiv.org/abs/2004.10177)
 
 For answers to any additional questions that might help accelerate the end of the COVID-19 pandemic, please contact [Rhiju Das](https://daslab.stanford.edu), Stanford University, <a href="mailto:rhiju@stanford.edu">rhiju@stanford.edu</a>.
