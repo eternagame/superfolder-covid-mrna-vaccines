@@ -2,7 +2,7 @@
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init 14</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder-v2 | 0.72 |  -2375.4  |  0.22 | 906.4  | 0.90 |
+|  Superfolder-v2 | 0.72 |  -2375.4  |  0.22 | **906.4**  | 0.90 |
 |  Superfolder-v2-B.1.351 | 0.72 | -2329.1  | 0.23   | 915.6 | 0.90 |
 |  Superfolder-v1 | 0.73 | -2382.1     | 0.22     |   917.4 | 0.86 |
 | LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
@@ -20,9 +20,9 @@ The Superfolder construct was optimized by Eterna participants to reduce predict
 
 The Superfolder-B.1.351 construct was developed by enumerating all GC-rich codon substitutions to result in the B.1.351 mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
 
-<img src="../assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="600"/>
+<img src="../assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
-<img src="../assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
+<img src="../assets/readme_metrics.png" alt="Barplot of calculated metrics" width="800"/>
 
 ## Additional mRNA designs
 
