@@ -26,6 +26,8 @@ Here is a visualization of the secondary structure of the mRNA compared to the s
 
 <img src="assets/secstructs.png" alt="Secondary structure of standard mRNA and superfolder" width="1000"/>
 
+ViennaRNA MFE predicted secondary structure, visualized in [RiboGraphViz](https://github.com/Daslab/ribographviz), colored by DegScore(OpenVaccine consortium, 2021, in prep).
+
 ## What it codes for
 ```
 > S-2P SARS-CoV-2 Spike glycoprotein antigen, prefusion stabilized double proline variant. 1273 amino acids.
