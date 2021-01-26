@@ -20,15 +20,15 @@ The Superfolder construct was optimized by Eterna participants to reduce predict
 
 The Superfolder-B.1.351 construct was developed by enumerating all GC-rich codon substitutions to result in the B.1.351 mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
 
-<img src="assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="600"/>
+<img src="../assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="600"/>
 
-<img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
+<img src="../assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
 
 ## Additional mRNA designs
 
 Eterna participants designed S-2P mRNAs with a diversity of structures in OpenVaccine project. 181 constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in this repository.
 
-<img src="assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="800"/>
+<img src="../assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="800"/>
 
 `sequences/Eterna_S2P_mRNAs.fasta` contains the winning S-2P sequences from Eterna OpenVaccine.
 
