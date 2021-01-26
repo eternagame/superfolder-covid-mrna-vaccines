@@ -1,6 +1,6 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
-| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init 14</sub><sup>c</sup> |
+| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
 |  Superfolder-v2 | 0.72 |  -2375.4  |  0.22 | **906.4**  | 0.90 |
 |  Superfolder-v2-B.1.351 | 0.72 | -2329.1  | 0.23   | 915.6 | 0.90 |
