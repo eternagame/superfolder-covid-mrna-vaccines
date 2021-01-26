@@ -26,7 +26,7 @@ Here is a visualization of the secondary structure of the mRNA compared to the s
 
 <img src="assets/secstructs.png" alt="Secondary structure of standard mRNA and superfolder" width="1000"/>
 
-ViennaRNA MFE predicted secondary structure, visualized in [RiboGraphViz](https://github.com/Daslab/ribographviz), colored by DegScore(OpenVaccine consortium, 2021, in prep).
+ViennaRNA MFE predicted secondary structure, visualized in [RiboGraphViz](https://github.com/Daslab/ribographviz), colored by DegScore (OpenVaccine consortium, 2021, in prep).
 
 ## What it codes for
 The below exact amino acid sequence is the basis for most mRNA vaccines that are undergoing clinical trials at the time of writing.
