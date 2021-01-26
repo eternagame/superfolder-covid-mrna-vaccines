@@ -2,8 +2,9 @@
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder | 0.72 | -2364.4   | 0.22   |   **933.6** | 0.86 |
-|  Superfolder-B.1.351 | 0.72 | -2327.3   | 0.23   |   **940.1** | 0.86 |
+|  Superfolder-v2 | 0.72 | -2364.4   | 0.22   |   **933.6** | 0.86 |
+|  Superfolder-v2-B.1.351 | 0.72 | -2327.3   | 0.23   |   **940.1** | 0.86 |
+| Superfolder-v1 | | | | | | |
 | LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
 |      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
