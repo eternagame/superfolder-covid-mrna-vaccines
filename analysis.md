@@ -2,13 +2,12 @@
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder | 0.73 | -2382.1     | 0.22     |   **917.4** | **0.86** |
+|  Superfolder | 0.72 | -2364.4   | 0.22   |   **933.6** | 0.86 |
+|  Superfolder-B.1.351 | 0.72 | -2327.3   | 0.23   |   **940.1** | 0.86 |
 | LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
 |      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
-
-
   
 <sup>a</sup>Average unpaired probabiility over entire coding sequence (Wayment-Steele, 2020b).  
 <sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep).  
@@ -16,11 +15,20 @@
 <sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 <sup>e</sup>Zhang, 2020.
 
-The Superfolder construct has been optimized in RiboTree both to minimize DegScore, thus maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired. 
+The Superfolder construct was optimized by Eterna participants to improve the symmetry of the structure. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
+
+The Superfolder-B.1.351 construct was developed by enumerating all GC-rich codon substitutions to result in the B.1.351 mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
 
 <img src="assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="600"/>
 
 <img src="assets/readme_metrics.png" alt="Barplot of calculated metrics" width="600"/>
+
+## Additional Eterna-designed sequences.
+
+Eterna participants designed S-2P mRNAs with a diversity of structures in OpenVaccine project. 181 constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in this repository.
+
+<img src="assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="600"/>
+
 
 ## Additional files
 

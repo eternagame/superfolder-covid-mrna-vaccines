@@ -47,8 +47,9 @@ The sequence was designed through the following steps, which have been validated
 3. The Ribotree-mRNA runs optimized DegScore, a predictor of overall hydrolysis rate trained on a vast data set of empirical measurements acquired during the [Eterna](https://eternagame.org) [roll-your-own sequence challenges](https://eternagame.org/labs/9830365) (OpenVaccine consortium, 2021, in prep). Training and test data are available at [Kaggle](https://www.kaggle.com/c/stanford-covid-vaccine/).
 4. Ribotree-mRNA runs were guided by [EternaFold](https://www.biorxiv.org/content/10.1101/2020.05.29.124511v1), currently the most accurate folding engine for predicting RNA structure properties (Wayment-Steele, 2020a).
 5. Ribotree-mRNA runs also favored opening of the first 14 nts to ensure a good binding site for the eukaryotic ribosome (Kozak, 1990; OpenVaccine consortium, in prep).
-6. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines (see, e.g., Orlandini von Niessen et al., 2008).
-7. The sequence was designed based on simulations with standard nucleosides A, C, G, and U. The Stanford OpenVaccine experimental team has evidence that mRNAs stabilized with these standard nucleotides remain stabilized with substitutions such as pseudouridine and its analogs substituting for U (OpenVaccine consortium, 2021, in prep).
+6. Participants of the [Eterna](https://eternagame.org) project rationally altered the sequence to reduce its predicted xx in solution.
+7. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines (see, e.g., Orlandini von Niessen et al., 2008).
+8. The sequence was designed based on simulations with standard nucleosides A, C, G, and U. The Stanford OpenVaccine experimental team has evidence that mRNAs stabilized with these standard nucleotides remain stabilized with substitutions such as pseudouridine and its analogs substituting for U (OpenVaccine consortium, 2021, in prep).
 
 Find more details and a comparison to other design methods in [analysis.md](analysis.md). 
 
