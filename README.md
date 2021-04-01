@@ -73,7 +73,7 @@ Find more details and a comparison to other design methods [here](analysis/analy
 
 Kozak M. Downstream secondary structure facilitates recognition of initiator codons by eukaryotic ribosomes (1990). Proc Natl Acad Sci U S A. 87(21):8301-5. [doi: 10.1073/pnas.87.21.8301](http://dx.doi.org/10.1073/pnas.87.21.8301)
 
-OpenVaccine Consortium (2021). Comparative optimization of messenger RNA structure, stability and expression for RNA therapeutics (in preparation).
+Leppek, K., Byeon, G.W., Kladwang, W., Wayment-Steele, H.K., Kerr, C., ... Barna, M., Das, R. (2021). Combinatorial optimization of mRNA structure, stability, and translation for RNA-based therapeutics. https://www.biorxiv.org/content/10.1101/2021.03.29.437587v1.
 
 Orlandini von Niessen AG, Poleganov MA, Rechner C, Plaschke A, Kranz LM, Fesser S, Diken M, Löwer M, Vallazza B, Beissert T, Bukur V, Kuhn AN, Türeci Ö, Sahin U. (2018), Improving mRNA-Based Therapeutic Gene Delivery by Expression-Augmenting 3' UTRs Identified by Cellular Library Screening. Mol Ther. 27(4):824-836. [doi: 10.1016/j.ymthe.2018.12.011](https://dx.doi.org/10.1016/j.ymthe.2018.12.011)
 
