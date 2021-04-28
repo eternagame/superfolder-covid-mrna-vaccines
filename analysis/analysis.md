@@ -5,6 +5,8 @@
 |  Superfolder-v2 | 0.72 |  -2375.4  |  0.22 | **906.4**  | 0.90 |
 |  Superfolder-v2-B.1.351 | 0.72 | -2329.1  | 0.23   | 915.6 | 0.90 |
 |  Superfolder-v1 | 0.73 | -2382.1     | 0.22     |   917.4 | 0.86 |
+| Putative Moderna mRNA-1273<sup>K</sup> | | | | | |
+| Putative BioNTech/Pfizer_BNT-162b2<sup>K</sup> | | | | | |
 | LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
 |      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
@@ -46,6 +48,8 @@ Eterna participants designed S-2P mRNAs with a diversity of structures in OpenVa
 `analysis/example_ribotree_output` contains representative output files from Ribotree optimization.
 
 ## References
+
+Dae-Eun Jeong, D.E. Matthew McCoy, M., Karen Artiles, K., Orkan Ilbay, O., Fire, A., Nadeau, K., Park, H., Betts, B., Scott Boyd, S., Hoh, R., Shoura, M. [Assemblies of putative SARS-CoV-2 spike encoding mRNA sequences for vaccines BNT-162b2 and mRNA-1273](https://github.com/NAalytics/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273).
 
 Kozak M. Downstream secondary structure facilitates recognition of initiator codons by eukaryotic ribosomes (1990). Proc Natl Acad Sci U S A. 87(21):8301-5. [doi: 10.1073/pnas.87.21.8301](http://dx.doi.org/10.1073/pnas.87.21.8301)
 
