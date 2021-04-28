@@ -2,21 +2,23 @@
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | DegScore<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder-v2 | 0.72 |  -2375.4  |  0.22 | **906.4**  | 0.90 |
-|  Superfolder-v2-B.1.351 | 0.72 | -2329.1  | 0.23   | 915.6 | 0.90 |
-|  Superfolder-v1 | 0.73 | -2382.1     | 0.22     |   917.4 | 0.86 |
-| Putative Moderna mRNA-1273<sup>K</sup> | | | | | |
-| Putative BioNTech/Pfizer_BNT-162b2<sup>K</sup> | | | | | |
-| LinearDesign<sup>e</sup> | 0.73 | -2533.3 | 0.20 |   963.4 | 0.42 |
-|      GC-rich<sup>d</sup> | 0.80 | -1617.2     | 0.42     |  1176.6 | 0.63 |
+|  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **906.4**  | 0.90 |
+|  Superfolder-v2-B.1.351               | 0.72 | -2329.1   | 0.23  | 915.6 | 0.90 |
+|  Superfolder-v1                       | 0.73 | -2382.1   | 0.22  |   917.4 | 0.86 |
+| Putative BioNTech/Pfizer_BNT-162b2<sup>d</sup> | 0.95 | -1341.1   | 0.40  |  1517.5   | 0.49  |
+| Putative Moderna mRNA-1273<sup>d</sup>| 0.98 | -1510.11  | 0.38  | 1396.7 |  0.43  |
+| LinearDesign<sup>e</sup>              | 0.73 | -2533.3   | 0.20 |   963.4 | 0.42 |
+|      GC-rich<sup>f</sup>              | 0.80 | -1617.2   | 0.42 |  1176.6 | 0.63 |
 |     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
   
+dG(MFE) calculated in LinearFold-Vienna.
 <sup>a</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
 <sup>b</sup>Machine-learning model for predicting degradation more accurately than average unpaired probability (OpenVaccine consortium, 2021, in prep).  
 <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990; OpenVaccine consortium, 2021, in prep) -- should be *high* to optimize translation.  
-<sup>d</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
+<sup>d</sup>Jeong, 2021.
 <sup>e</sup>Zhang, 2020.
+<sup>f</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 
 The Superfolder construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
 
