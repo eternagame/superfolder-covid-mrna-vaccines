@@ -2,8 +2,8 @@
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life <sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.343**  | 0.90 |
-|  Superfolder-Delta                 | 0.72 | -2356.6   | 0.22  | 0.45 | 0.90 |
+|  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.34**  | **0.90** |
+|  Superfolder-Delta                 | 0.72 | -2356.6   | 0.22  | **0.34** | **0.90** |
 |  Superfolder-Delta-PSU                | 0.72 | -1711.2   | 0.29  | 0.55<sup>d</sup> | 0.90 |
 |  Superfolder-v1                       | 0.73 | -2382.1   | 0.22  |   0.34 | 0.86 |
 | Putative BioNTech/Pfizer_BNT-162b2<sup>e</sup> | 0.95 | -1341.1  | 0.21  |  1517.5   | 0.49  |
