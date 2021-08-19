@@ -55,10 +55,12 @@ def cai(seq):
 	# return the geometric mean
 	return gmean(w_list)
 
-
 def write_degscore(row):
 	mdl = DegScore(row['sequence'])
-	return mdl.degscore
+	struct = mdl.structure
+
+	psu_mdl = DegScore(row['sequence'],structure=struct,mask_U=True)
+	return mdl.est_half_life, psu_mdl.est_half_life
 
 def write_ensemble_metrics(row, id_field):
 
@@ -82,7 +84,7 @@ def write_ensemble_metrics(row, id_field):
 	punp_vector = 1-np.sum(bpp_mat, axis=0)
 
 	aup = np.mean(punp_vector)
-	sup_init = np.sum(punp_vector[:14])
+	sup_init = np.mean(punp_vector[:14])
 
 	return aup, sup_init
 
@@ -99,9 +101,9 @@ if __name__=="__main__":
 	print(df)
 
 	df['CAI'] = df.apply(lambda row: cai(row['sequence']), axis=1)
-	df[['AUP', 'SUP_init']] = df.apply(lambda row: write_ensemble_metrics(row, 'Designer'), axis=1,result_type='expand')
+	df[['AUP', 'AUP init 14']] = df.apply(lambda row: write_ensemble_metrics(row, 'Designer'), axis=1,result_type='expand')
 	df['_MFE_struct_vienna'] = df.apply(lambda row: write_MFE_struct(row), axis=1)
 	df['dG(MFE)'] = df.apply(lambda row: write_dG_MFE(row), axis=1)
-	df['DegScore'] = df.apply(lambda row: write_degscore(row), axis=1)
+	df['DegScore_half_life','DegScore_PSU_half_life'] = df.apply(lambda row: write_degscore(row), axis=1, result_type='expand')
 
-	df.to_csv('further_sequences_processed.csv',index=False)
+	df.to_csv('%s_WITH_METRICS.csv' % sys.argv[1].replace('.csv',''),index=False)
