@@ -3,7 +3,7 @@
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life <sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
 |  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.34**  | **0.90** |
-|  Superfolder-Delta                 | 0.72 | -2356.6   | 0.22  | **0.34** | **0.90** |
+|  Superfolder-Delta                 | 0.72 | -2323.6   | 0.23  | **0.33** | **0.86** |
 |  Superfolder-Delta-PSU                | 0.72 | -1711.2   | 0.29  | 0.55<sup>d</sup> | 0.90 |
 |  Superfolder-v1                       | 0.73 | -2382.1   | 0.22  |   0.34 | 0.86 |
 | Putative BioNTech/Pfizer_BNT-162b2<sup>e</sup> | 0.95 | -1341.1  | 0.21  |  1517.5   | 0.49  |
@@ -26,11 +26,10 @@ The Superfolder construct was optimized by Eterna participants to reduce predict
 
 The Superfolder-Delta construct was developed by enumerating all GC-rich codon substitutions to result in the Delta mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
 
-<img src="../assets/readme_metrics_2.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+<img src="../assets/results_barplot_18Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
 
-<img src="../assets/readme_metrics.png" alt="Barplot of calculated metrics" width="800"/>
+<img src="../assets/results_scatterplot18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
-<img src="../assets/Delta_update_metrics.png" alt="Barplot of calculated metrics for delta variants" width="800"/>
 
 The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
 

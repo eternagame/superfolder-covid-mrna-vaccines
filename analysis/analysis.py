@@ -104,6 +104,6 @@ if __name__=="__main__":
 	df[['AUP', 'AUP init 14']] = df.apply(lambda row: write_ensemble_metrics(row, 'Designer'), axis=1,result_type='expand')
 	df['_MFE_struct_vienna'] = df.apply(lambda row: write_MFE_struct(row), axis=1)
 	df['dG(MFE)'] = df.apply(lambda row: write_dG_MFE(row), axis=1)
-	df['DegScore_half_life','DegScore_PSU_half_life'] = df.apply(lambda row: write_degscore(row), axis=1, result_type='expand')
+	df[['DegScore_half_life','DegScore_PSU_half_life']] = df.apply(lambda row: write_degscore(row), axis=1, result_type='expand')
 
 	df.to_csv('%s_WITH_METRICS.csv' % sys.argv[1].replace('.csv',''),index=False)
