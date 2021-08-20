@@ -43,7 +43,16 @@ In July 2021, XX B.1.617 and Delta variants were submitted and voted upon by Ete
 
 <img src="../assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="800"/>
 
-`analysis/analysis.py` reproduces the above calculations, with an example input in `assets/example_input.csv`.
+`analysis/analysis.py` reproduces the above calculations. Usage:
+
+`python analysis.py input.csv`
+
+Where `input.csv` is of the form
+
+| Designer | sequence |
+| ----- | ------ |
+| Design A | AUGGUCCGU |
+| Design B | AUGAAACGU |
 
 ## References
 
