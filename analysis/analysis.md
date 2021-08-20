@@ -15,6 +15,8 @@
   
 dG(MFE) calculated in LinearFold-Vienna.
 
+The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
+
 <sup>a</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
 
 <sup>b</sup>Estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021).
@@ -37,8 +39,25 @@ The Superfolder-Delta construct was developed by enumerating all GC-rich codon s
 
 <img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
+## Estimating half-life from DegScore
 
-The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
+To calibrate the DegScore model to measured degradation rates on full-length mRNAs, we performed a linear fit between predicted DegScore values for ~233 mRNAs of varying length (Leppek, 2021), as well as the "Roll-Your-Own Structure" dataset. The below plot shows the resulting fit of the degradation rate, and the corresponding half-life.
+
+Specifically, estimated degradation rate (`est_k_deg`) is calculated as
+
+```
+est_k_deg = m * degscore + b
+m = 0.002170959651184987
+b = 0.05220886935630193
+```
+
+
+And estimated half life is calculated as
+
+```
+est_half_life = ln(2) / est_k_deg.
+```
+
 
 ## Additional mRNA designs
 
