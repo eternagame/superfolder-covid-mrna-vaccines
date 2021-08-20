@@ -58,12 +58,11 @@ And estimated half life is calculated as
 est_half_life = ln(2) / est_k_deg.
 ```
 
-
 ## Additional mRNA designs
 
 Eterna participants have designed S-2P and Delta variant mRNAs with a diversity of structures in OpenVaccine project. 
 
-In December 2021, 181 S-2P constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in `superfolders_ALL.csv`.
+In December 2020, 181 S-2P constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in `superfolders_ALL.csv`.
 
 Between May and August 2021, 1,563 B.1.617 and Delta variant designs were submitted and voted upon by Eterna participants. The top 8 candidates for both unmodified nucleotides and PSU DegScore are included in `superfolders_ALL.csv`.
 
