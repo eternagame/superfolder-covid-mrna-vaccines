@@ -28,7 +28,7 @@ The Superfolder-Delta construct was developed by enumerating all GC-rich codon s
 
 <img src="../assets/results_barplot_18Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
 
-<img src="../assets/results_scatterplot18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+<img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
 
 The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
