@@ -1,6 +1,6 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
-| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life <sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
+| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life (hrs)<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
 |  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.34**  | **0.90** |
 |  Superfolder-Delta                 | 0.72 | -2323.6   | 0.23  | **0.33** | **0.86** |
@@ -14,12 +14,21 @@
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
   
 dG(MFE) calculated in LinearFold-Vienna.
+
+The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
+
 <sup>a</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
-<sup>b</sup>Estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021).
+
+<sup>b</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below).
+
 <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation.  
+
 <sup>d</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.)
+
 <sup>e</sup>Jeong, 2021.
+
 <sup>f</sup>Zhang, 2020.
+
 <sup>g</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 
 The Superfolder construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
@@ -28,22 +37,54 @@ The Superfolder-Delta construct was developed by enumerating all GC-rich codon s
 
 <img src="../assets/results_barplot_18Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
 
-<img src="../assets/results_scatterplot18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+<img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+
+## Estimating half-life from DegScore
+
+To calibrate the DegScore model to measured degradation rates on full-length mRNAs, we performed a linear fit between predicted DegScore values for ~233 mRNAs of varying length (Leppek, 2021), as well as the "Roll-Your-Own Structure" dataset. The below plot shows the resulting fit of the degradation rate, and the corresponding half-life.
+
+Specifically, estimated degradation rate (`est_k_deg`) is calculated as
+
+```
+est_k_deg = m * degscore + b
+m = 0.002170959651184987
+b = 0.05220886935630193
+```
 
 
-The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
+And estimated half life is calculated as
+
+```
+est_half_life = ln(2) / est_k_deg.
+```
+
+<img src="../assets/example_dataset_degscore_predictions.png" width="800"/>
+
+
+Jupyter notebook to reproduce the above analysis is [here](https://github.com/eternagame/DegScore/blob/master/Demo/Degscore_Demo.ipynb).
 
 ## Additional mRNA designs
 
 Eterna participants have designed S-2P and Delta variant mRNAs with a diversity of structures in OpenVaccine project. 
 
-In December 2021, 181 S-2P constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in `superfolders_ALL.csv`.
+In December 2020, 181 S-2P constructs were submitted and voted upon by Eterna participants. The top 9 candidates are included in `superfolders_ALL.csv`.
 
-In July 2021, XX B.1.617 and Delta variants were submitted and voted upon by Eterna participants. The top 8 candidates for both unmodified nucleotides and PSU DegScore are included in `superfolders_ALL.csv`.
+Between May and August 2021, 1,563 B.1.617 and Delta variant designs were submitted and voted upon by Eterna participants. The top 8 candidates for both unmodified nucleotides and PSU DegScore are included in `superfolders_ALL.csv`.
 
 <img src="../assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="800"/>
 
-`analysis/analysis.py` reproduces the above calculations, with an example input in `assets/example_input.csv`.
+`analysis/analysis.py` reproduces the above calculations. Usage:
+
+`python analysis.py input.csv`
+
+Where `input.csv` is of the form
+
+```
+Designer,sequence
+Design_A,AUGCAUAAAUGGUCUUGA
+Design_B,AUGCACAAGUGGAGCUGA
+```
+
 
 ## References
 
