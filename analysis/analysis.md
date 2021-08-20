@@ -19,7 +19,7 @@ The Superfolder-Delta-PSU construct was designed from scratch by Eterna particip
 
 <sup>a</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
 
-<sup>b</sup>Estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021).
+<sup>b</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below).
 
 <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation.  
 
