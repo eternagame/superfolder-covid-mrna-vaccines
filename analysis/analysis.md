@@ -1,17 +1,18 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life (hrs)<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
-| ------------ |--------|------- |--------- | ----  | ----  | 
-|  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.34**  | **0.90** |
-|  Superfolder-Delta                 | 0.72 | -2323.6   | 0.23  | **0.33** | **0.86** |
-|  Superfolder-Delta-PSU                | 0.72 | -1711.2   | 0.29  | 0.55<sup>d</sup> | 0.90 |
-|  Superfolder-v1                       | 0.73 | -2382.1   | 0.22  |   0.34 | 0.86 |
-| Putative BioNTech/Pfizer_BNT-162b2<sup>e</sup> | 0.95 | -1341.1  | 0.21  |  1517.5   | 0.49  |
-| Putative Moderna mRNA-1273<sup>e</sup>| 0.98 | -1510.11  | 0.38  | 0.22 |  0.43  |
-| LinearDesign<sup>f</sup>              | 0.73 | -2533.3   | 0.20  |   0.32 | 0.42 |
-|      GC-rich<sup>g</sup>              | 0.80 | -1617.2   | 0.42  |  0.27 | 0.63 |
-|     [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization | 0.95 | -1304.3     | 0.49     |  1263.9 | 0.58 |
-|          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
+|---------------------|----|-------|----|----|----|
+|Superfolder-v2       |0.72|-2375.4|0.22|**0.34**|**0.9**0|
+|Superfolder-Delta-PSU|0.64|-1711.2|0.29|0.55<sup>d</sup>|0.90|
+|Superfolder-Delta    |0.72|-2323.6|0.23|0.33|0.86|
+|Superfolder-v1       |0.73|-2382.1|0.22|0.34|0.86|
+|LinearDesign<sup>f</sup>          |0.72|-2533.3|0.20|0.32|0.42|
+|Putative BioNTech/Pfizer_BNT-162b2<sup>e</sup>               |0.95|-1341.1|0.40|0.21|0.50|
+|Putative Moderna mRNA-1273<sup>e</sup>              |0.98|-1510.1|0.39|0.22|0.43|
+|[IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization                  |0.73|-1089.5|0.51|0.22|0.46|
+| [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization              |0.95|-1304.3|0.49|0.25|0.58|
+|GC-rich<sup>g</sup>             |0.80|-1617.2|0.42|0.27|0.63|
+
   
 dG(MFE) calculated in LinearFold-Vienna.
 
@@ -35,7 +36,7 @@ The Superfolder construct was optimized by Eterna participants to reduce predict
 
 The Superfolder-Delta construct was developed by enumerating all GC-rich codon substitutions to result in the Delta mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
 
-<img src="../assets/results_barplot_18Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
+<img src="../assets/results_barplot_20Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
 
 <img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
