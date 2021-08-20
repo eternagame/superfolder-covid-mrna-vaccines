@@ -1,6 +1,6 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
-| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life <sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
+| Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life (hrs)<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 | ------------ |--------|------- |--------- | ----  | ----  | 
 |  Superfolder-v2                       | 0.72 |  -2375.4  |  0.22 | **0.34**  | **0.90** |
 |  Superfolder-Delta                 | 0.72 | -2323.6   | 0.23  | **0.33** | **0.86** |
@@ -14,12 +14,19 @@
 |          [IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization | 0.73 | -1089.5     | 0.51     |  1427.8 | 0.46 |
   
 dG(MFE) calculated in LinearFold-Vienna.
+
 <sup>a</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
+
 <sup>b</sup>Estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021).
+
 <sup>c</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation.  
+
 <sup>d</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.)
+
 <sup>e</sup>Jeong, 2021.
+
 <sup>f</sup>Zhang, 2020.
+
 <sup>g</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 
 The Superfolder construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
