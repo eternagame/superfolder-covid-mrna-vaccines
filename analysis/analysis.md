@@ -58,6 +58,11 @@ And estimated half life is calculated as
 est_half_life = ln(2) / est_k_deg.
 ```
 
+<img src="../assets/example_dataset_degscore_predictions.png" width="800"/>
+
+
+Jupyter notebook to reproduce the above analysis is [here](https://github.com/eternagame/DegScore/blob/master/Demo/Degscore_Demo.ipynb).
+
 ## Additional mRNA designs
 
 Eterna participants have designed S-2P and Delta variant mRNAs with a diversity of structures in OpenVaccine project. 
