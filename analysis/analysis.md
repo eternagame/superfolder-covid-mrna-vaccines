@@ -51,8 +51,8 @@ Where `input.csv` is of the form
 
 ```
 Designer,sequence
-Design A, AUGCAUAAAUGGUCUUGA
-Design B, AUGCACAAGUGGAGCUGA
+Design_A,AUGCAUAAAUGGUCUUGA
+Design_B,AUGCACAAGUGGAGCUGA
 ```
 
 
