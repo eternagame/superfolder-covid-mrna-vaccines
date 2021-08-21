@@ -1,5 +1,7 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
+<img src="../assets/results_barplot_20Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
+
 | Design |  CAI | dG(MFE) (kcal/mol) |   AUP<sub>CDS</sub><sup>a</sup> | Est. half-life (hrs)<sup>b</sup> | AUP<sub>init. 14 nts</sub><sup>c</sup> |
 |---------------------|----|-------|----|----|----|
 |Superfolder-v2       |0.72|-2375.4|0.22|**0.34**|**0.9**0|
@@ -34,9 +36,7 @@ The Superfolder-Delta-PSU construct was designed from scratch by Eterna particip
 
 The Superfolder construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
 
-The Superfolder-Delta construct was developed by enumerating all GC-rich codon substitutions to result in the Delta mutant spike protein, evaluating their DegScore, and selecting the variant with the lowest DegScore.
-
-<img src="../assets/results_barplot_20Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
+The Superfolder-Delta construct was developed using the mRNA-hotfix tool (link coming soon): this tool enumerates all GC-rich codon substitutions that result in the Delta mutant spike protein, evaluates their DegScore, and selects the variant with the lowest DegScore.
 
 <img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
