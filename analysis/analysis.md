@@ -16,28 +16,14 @@
 |GC-rich<sup>h</sup>             |0.80|-1617.2|0.42|0.27|0.63|
 
   
+<sup>a</sup>dG(MFE) calculated in LinearFold-Vienna; <sup>b</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b); <sup>c</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below). Half-life estimate is for accelerate degradation conditions mimicking cationic environment (10 mM MgCl2, Na-CHES pH 10.0, 24 °C); <sup>d</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation; <sup>e</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.); <sup>f</sup>Zhang, 2020; <sup>g</sup>Jeong, 2021.; <sup>h</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
+
 
 The Superfolder-v2 construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
 
 The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
 
 The Superfolder-Delta construct was developed using the mRNA-hotfix tool (link coming soon): this tool enumerates all GC-rich codon substitutions that result in the Delta mutant spike protein, evaluates their DegScore, and selects the variant with the lowest DegScore.
-
-<sup>a</sup>dG(MFE) calculated in LinearFold-Vienna.
-
-<sup>b</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
-
-<sup>c</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below). Half-life estimate is for accelerate degradation conditions mimicking cationic environment (10 mM MgCl2, Na-CHES pH 10.0, 24 °C)
-
-<sup>d</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation.  
-
-<sup>e</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.)
-
-<sup>f</sup>Zhang, 2020.
-
-<sup>g</sup>Jeong, 2021.
-
-<sup>h</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
 
 
 <img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
