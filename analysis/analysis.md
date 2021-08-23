@@ -27,7 +27,7 @@ The Superfolder-Delta construct was developed using the mRNA-hotfix tool (link c
 
 <sup>b</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b).  
 
-<sup>c</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below).
+<sup>c</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below). Half-life estimate is for accelerate degradation conditions mimicking cationic environment (10 mM MgCl2, Na-CHES pH 10.0, 24 °C)
 
 <sup>d</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation.  
 
