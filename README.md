@@ -49,7 +49,7 @@ The below exact amino acid sequence is the basis for most mRNA vaccines that are
 MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGSNVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDPPEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCSCLKGCCSCGSCCKFDEDDSEPVLKGVKLHYT
 ```
 
-For ongoing efforts to create new vaccines for new variants, we are also providing sequences that have been adapted to code for the spike protein of strains B.1.351, B.1.1.7, P.1, and B.1.617.2.
+For ongoing efforts to create new vaccines for new variants, we are also providing sequences that have been adapted to code for the spike protein of strains B.1.351, B.1.1.7, P.1, and B.1.617.2 that were designed using the [mRNA hotfix](https://www.eternagame.org/about/software) tool.
 
 **NOTE: v1.0.0 of this repository had a Delta variant superfolder whose sequence was incorrect.**
 
@@ -80,6 +80,7 @@ The sequence was designed through the following steps, which have been validated
 7. The sequence was screened for robustness of structure and low predicted hydrolysis in the context of numerous combinations of  5' UTR's, 3' UTR's, and poly(A) motifs that are currently in use for COVID-19 mRNA vaccines (see, e.g., Orlandini von Niessen et al., 2008).
 8. To prepare the mutant variants, we enumerated codons with the highest GC content for mutant amino acids and selected the candidate with the lowest DegScore.
 9. One included sequence  -- the `Superfolder-Delta-PSU` -- was designed based on predictions for stabilization incurred by using Pseudouridine instead of Uracil (Leppek, 2021).
+10. Sequences for other variants of concern were modified algorithmically using the [mRNA hotfix](https://www.eternagame.org/about/software) tool to enumerate all changed codons and select the sequence with the best DegScore.
 
 Find more details and a comparison to other design methods [here](analysis/analysis.md). 
 
