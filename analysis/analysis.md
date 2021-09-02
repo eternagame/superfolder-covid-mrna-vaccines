@@ -72,7 +72,18 @@ In December 2020, 181 S-2P constructs were submitted and voted upon by Eterna pa
 
 Between May and August 2021, 1,563 B.1.617 and Delta variant designs were submitted and voted upon by Eterna participants. The top 8 candidates for both unmodified nucleotides and PSU DegScore are included in `superfolders_ALL.csv`.
 
+### S-2P designs
+
 <img src="../assets/OpenVaccine_winners_S2P.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine round 7." width="800"/>
+
+### Delta designs
+
+<img src="../analysis/Delta_unmod_designs.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine-Delta round." width="800"/>
+
+### Delta-PSU designs
+
+<img src="../analysis/Delta_PSU_designs.png" alt="RiboGraphViz images of all Eterna winners of OpenVaccine-Delta PSU round." width="800"/>
+
 
 `analysis/analysis.py` reproduces the above calculations. Usage:
 
