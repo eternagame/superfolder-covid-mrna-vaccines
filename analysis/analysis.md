@@ -23,7 +23,7 @@ The Superfolder-v2 construct was optimized by Eterna participants to reduce pred
 
 The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
 
-The Superfolder-Delta construct was developed using the mRNA-hotfix tool (link coming soon): this tool enumerates all GC-rich codon substitutions that result in the Delta mutant spike protein, evaluates their DegScore, and selects the variant with the lowest DegScore.
+The Superfolder-Delta construct was developed using the [mRNA-hotfix tool](https://eternagame.org/about/software): this tool enumerates all GC-rich codon substitutions that result in the Delta mutant spike protein, evaluates their DegScore, and selects the variant with the lowest DegScore.
 
 
 <img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
