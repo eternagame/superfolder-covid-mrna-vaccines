@@ -1,32 +1,38 @@
 ## Comparing the Superfolder to conventionally designed mRNA sequences
 
-<img src="../assets/results_barplot_20Aug2021.png" alt="Barplot of calculated metrics" width="800"/>
+<img src="../assets/results_barplot_24Dec2021.png" alt="Barplot of calculated metrics" width="1000"/>
 
-| Design |  CAI | dG(MFE) (kcal/mol)</sub><sup>a</sup> |   AUP<sub>CDS</sub><sup>b</sup> | Est. half-life (hrs)<sup>c</sup> | AUP<sub>init. 14 nts</sub><sup>d</sup> |
-|---------------------|----|-------|----|----|----|
-|Superfolder-v2       |0.72|-2375.4|0.22|**0.34**|**0.9**0|
-|Superfolder-Delta-PSU|0.64|-1711.2|0.29|0.55<sup>e</sup>|0.90|
-|Superfolder-Delta    |0.72|-2323.6|0.23|0.33|0.86|
-|Superfolder-v1       |0.73|-2382.1|0.22|0.34|0.86|
-|LinearDesign<sup>f</sup>          |0.72|-2533.3|0.20|0.32|0.42|
-|Putative BioNTech/Pfizer_BNT-162b2<sup>g</sup>               |0.95|-1341.1|0.40|0.21|0.50|
-|Putative Moderna mRNA-1273<sup>g</sup>              |0.98|-1510.1|0.39|0.22|0.43|
-|[IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization                  |0.73|-1089.5|0.51|0.22|0.46|
-| [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization              |0.95|-1304.3|0.49|0.25|0.58|
-|GC-rich<sup>h</sup>             |0.80|-1617.2|0.42|0.27|0.63|
+| Design | Est. half-life (hrs)<sup>a</sup> | AUP<sub>init. 14 nts</sub><sup>b</sup> |   AUP<sub>CDS</sub><sup>c</sup> | dG(MFE) (kcal/mol)</sub><sup>d</sup> | CAI |
+|---------------------|----|-------|-------|----|----|
+|Putative BioNTech/Pfizer_BNT-162b2<sup>e</sup>               |0.21|0.50|0.40|-1341.1|0.95|
+|Putative Moderna mRNA-1273<sup>e</sup>              |0.22|0.43|0.39|-1510.1|0.98|
+|[IDT](https://www.idtdna.com/pages/tools/codon-optimization-tool?returnurl=%2FCodonOpt) codon optimization                  |0.22|0.46|0.51|-1089.5|0.73|
+| [GENEWIZ](https://www.genewiz.com/Public/Services/Gene-Synthesis/Codon-Optimization) codon optimization              |0.25|0.58|0.49|-1304.3|0.95|
+|GC-rich<sup>f</sup>             |0.27|0.63|0.42|-1617.2|0.80|
+|LinearDesign<sup>g</sup>          |0.32|0.42|0.20|-2533.3|0.72|
+|Superfolder-v1       |0.34|0.86|0.22|-2382.1|0.73|
+|Superfolder-v2       |**0.34**|**0.90**|0.22|-2375.4|0.72|
+|Superfolder-Delta    |0.33|0.86|0.23|-2323.6|0.72|
+|Superfolder-Delta-PSU|0.55<sup>h</sup>|0.90|0.29|-1711.2|0.64|
+|Superfolder-Omicron    |0.35|0.42|0.23|-2278.6|0.72|
+|Superfolder-Omicron-PSU    |0.55<sup>h</sup>|0.84|0.29|-1712.5|0.64|
+
 
   
-<sup>a</sup>dG(MFE) calculated in LinearFold-Vienna; <sup>b</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b); <sup>c</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below). Half-life estimate is for accelerate degradation conditions mimicking cationic environment (10 mM MgCl2, Na-CHES pH 10.0, 24 °C); <sup>d</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation; <sup>e</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.); <sup>f</sup>Zhang, 2020; <sup>g</sup>Jeong, 2021.; <sup>h</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015).  
+<sup>a</sup>Half-life estimated from [DegScore](https://github.com/eternagame/DegScore), machine-learning model for predicting degradation more accurately than average unpaired probability (Leppek, 2021) (see note below). Half-life estimate is for accelerate degradation conditions mimicking cationic environment (10 mM MgCl2, Na-CHES pH 10.0, 24 °C); <sup>b</sup>Average unpaired probability of the first 14 nucleotides of the coding sequence (Kozak, 1990) -- should be *high* to optimize translation; <sup>c</sup>Average unpaired probability over entire coding sequence (Wayment-Steele, 2020b) <sup>d</sup>dG(MFE) calculated in LinearFold-Vienna; <sup>e</sup>Jeong, 2021.; <sup>f</sup>Each codon is randomly sampled from the most GC-rich codons for that amino acid (Thess, 2015); <sup>g</sup>Zhang, 2020; <sup>h</sup>Using PSU heuristic, setting DegScore for U to 0 (see [DegScore](https://github.com/eternagame/DegScore) repository.).  
 
 
 The Superfolder-v2 construct was optimized by Eterna participants to reduce predicted degradation. It is an adaptation of Superfolder-v1, which had been optimized in RiboTree both to minimize DegScore, maximizing in vitro stability, while keeping the first 14 nucleotides of the coding sequence unpaired.
 
-The Superfolder-Delta-PSU construct was designed from scratch by Eterna participants in the Delta challenge, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
+<img src="../assets/result_scatterplots_24Dec2021_WT_S-2P.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+
+The Superfolder-Delta-PSU and Superfolder-Omicron-PSU constructs were designed from scratch by Eterna participants in the Delta and Omicron challenges, respectively, optimizing a modified DegScore that increases the stability of PSU by setting U degradation to zero.
 
 The Superfolder-Delta construct was developed using the [mRNA-hotfix tool](https://eternagame.org/about/software): this tool enumerates all GC-rich codon substitutions that result in the Delta mutant spike protein, evaluates their DegScore, and selects the variant with the lowest DegScore.
 
+<img src="../assets/result_scatterplots_24Dec2021_Delta.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
-<img src="../assets/result_scatterplots_18Aug2021.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
+<img src="../assets/result_scatterplots_24Dec2021_Omicron.png" alt="Scatterplot of DegScore vs. AUP init" width="800"/>
 
 ## Estimating half-life from DegScore
 
