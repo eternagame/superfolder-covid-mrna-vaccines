@@ -97,7 +97,7 @@ The sequence was designed through the following steps, which have been validated
 9. Two included sequences  -- the `Superfolder-Delta-PSU` and `Superfolder-Omicron-PSU` -- were designed based on predictions for stabilization incurred by using Pseudouridine instead of Uracil (Leppek, 2021).
 10. Sequences for other variants of concern were modified algorithmically using the [mRNA hotfix](https://www.eternagame.org/about/software) tool to enumerate all changed codons and select the sequence with the best DegScore.
 
-Find more details and a comparison to other design methods [here](analysis/analysis.md). 
+Find more details and a comparison to other design methods [here](analysis/README.md). 
 
 ## References
 
